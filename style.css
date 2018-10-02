@@ -77,7 +77,6 @@ body {
     display: grid;
     grid-column-gap: 50px;
     grid-template-columns: auto auto;
-    padding-top: 5rem;
 }
 .grid-item {
     color: black;
