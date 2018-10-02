@@ -49,3 +49,13 @@ body {
     font-size: 5rem;
     color: rgb(39, 39, 39);
 }
+.container .col {
+    background-color: rgba(192, 192, 192, 0.487);
+}
+.container .col h1 {
+    background-color: transparent;
+    color: black;
+}
+.container .email {
+    margin-left: 11.5rem;
+}
