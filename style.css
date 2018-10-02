@@ -1,3 +1,11 @@
+body {
+    background-image: url("pictures/39950569-black-and-white-wallpapers.png");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .navbar {
     background-color: rgba(0, 0, 0, 0.159);
     background-size: 10rem 5rem;
@@ -7,12 +15,37 @@
 }
 .header a {
     font-size: 2rem;
+    background-color: transparent;
+    background-size: 0% 100%;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    outline: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 1s;
+    width: 10rem;
 }
-body {
-    background-image: url("pictures/39950569-black-and-white-wallpapers.png");
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
+.header a:hover {
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(152, 152, 152, 1) 64%,
+        rgba(55, 55, 55, 1) 86%
+    );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200% 100%;
+    transition: background-size 2s, background-color 3s;
+}
+.header .btn {
+    background-color: transparent;
+}
+.container h1 {
+    background-color: rgba(192, 192, 192, 0.303);
+    font-size: 5rem;
+    color: rgb(39, 39, 39);
 }
