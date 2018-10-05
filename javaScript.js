@@ -1,21 +1,21 @@
-function leftSlide(tab) {
-    $(tab).addClass("animated slideInLeft");
-}
-
-function rightSlide(tab) {
-    $(tab).addClass("animated slideInRight");
-}
-
-$('li[data-toggle="tab"]').on("shown.bs.tab", function(e) {
-    var url = new String(e.target);
-    var pieces = url.split("#");
-    var seq = $(this)
-        .children("a")
-        .attr("data-seq");
-    var tab = $(this)
-        .children("a")
-        .attr("href");
-    if (pieces[1] == "profile") {
-        leftSlide(tab);
+for (const nav of document.querySelectorAll(".nav")) {
+    for (const link of nav.querySelectorAll(".nav-link")) {
+        link.addEventListener("click", function() {
+            setAsActiveLink(nav, link);
+        });
     }
-});
+}
+
+function setAsActiveLink(nav, link) {
+    const current = nav.querySelector(".nav-link.active");
+    current.classList.remove("active");
+    link.classList.add("active");
+
+    document
+        .querySelector(current.getAttribute("href"))
+        .classList.remove("show", "active");
+
+    document
+        .querySelector(link.getAttribute("href"))
+        .classList.add("show", "active");
+}
