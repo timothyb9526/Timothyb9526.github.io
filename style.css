@@ -157,3 +157,7 @@ body {
 #title {
     text-decoration-line: underline;
 }
+.tooltip-inner {
+    height: 25rem;
+    max-width: 50rem;
+}
