@@ -161,3 +161,9 @@ body {
     height: 25rem;
     max-width: 50rem;
 }
+.carousel-caption h5 {
+    background-color: black;
+    width: 145%;
+    margin-left: -8rem;
+    height: 2rem;
+}
