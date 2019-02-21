@@ -1,306 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Timothy Bowling Portfolio</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Timothy Bowling Portfolio</title>
-</head>
-
-<body>
-    <div class="header">
-        <nav class="navbar navbar-expand navbar-dark">
-            <p class="navbar-brand" href="index.html">
-                <img src="pictures/Bowling.png" class="border border-dark rounded-circle" width="80" height="80" alt="logo">
-            </p>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-        </nav>
-    </div>
-    <div class="container mt-5">
-        <div class="panel panel-default">
-            <h1 class="text-center">Timothy Bowling</h1>
-        </div>
-        <div class="panel panel-default mt-5">
-            <div class="panel-heading">
-                <h2 class="text-center">Bio</h2>
-            </div>
-            <div class="panel-body mx-auto">
-                <p>
-                    I was born in Oxford, MS on February 4th 2000. I'm from Bruce MS and i like music and video games.
-                    I am currently training
-                    to become a web developer at Base Camp Coding Academy. I am driven to become the best
-                    person/web-developer
-                    i can be. After graduation, i plan to be a full-time developer, maybe developing programs for video
-                    games
-                    someday.
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand navbar-dark">
+                <p class="navbar-brand" href="index.html">
+                    <img
+                        src="pictures/Bowling.png"
+                        class="border border-dark rounded-circle"
+                        width="80"
+                        height="80"
+                        alt="logo"
+                    />
                 </p>
-            </div>
+                <div id="list" class="list-group">
+                    <a
+                        class="list-group-item list-group-item-action"
+                        href="#projects"
+                        >projects</a
+                    >
+                </div>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
         </div>
         <div class="container mt-5">
             <div class="panel panel-default">
-                <h1 class="border border-dark text-center" style="background-color: rgba(192, 192, 192, 0.419);">My
-                    Projects</h1>
+                <h1 class="text-center">Timothy Bowling</h1>
             </div>
-        </div>
-        <div class="container">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <div class="slider"></div>
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                        aria-selected="true">
-                        <i class="fas fa-home"></i>
-                        <span class="python ml-0"></span> Python</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                        aria-selected="false">
-                        <i class="fas fa-id-card"></i> HTML/CSS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting"
-                        aria-selected="false">
-                        <i class="fas fa-cogs"></i> JavaScript</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project"
-                        aria-selected="false">
-                        <i class="fas fa-cogs"></i> Django</a>
-                </li>
-            </ul>
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="text-center">Bio</h2>
+                </div>
+                <div class="panel-body mx-auto">
+                    <h2>
+                        My name is Timothy Bowling,
+                    </h2>
 
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="language grid-container pb-5">
-                        <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://github.com/timothyb9526/rental_store_timothybowling">
-                                        <img class="d-block w-100" src="pictures/python-final.png" width="200" height="400"
-                                            alt="First slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Python Final</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/tetris">
-                                        <img class="d-block w-100" src="pictures/tetris.png" width="200" height="400"
-                                            alt="Second slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Tetris</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/rental_store_timothybowling">
-                                        <img class="d-block w-100" src="pictures/Rental_store.png" width="200" height="400"
-                                            alt="Third slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Rental Store</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/Gladiator">
-                                        <img class="d-block w-100" src="pictures/Gladiator.png" width="200" height="400"
-                                            alt="Fourth slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Gladiator</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/Blackjack">
-                                        <img class="d-block w-100" src="pictures/Blackjack.png" width="200" height="400"
-                                            alt="Fifth slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Blackjack</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/pythonChallenge">
-                                        <img class="d-block w-100" src="pictures/python_challenge.png" width="200" height="400"
-                                            alt="Six slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Python_challenge</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        I am currently studying at Base Camp Coding Academy to
+                        become a web developer.
+                    </p>
+                    <h5>
+                        I was born in Oxford, MS on February 4th 2000. I'm from
+                        Bruce MS. I graduated from bruce high school in May
+                        2018. I started my coding career at Base Camp in early
+                        June and will finish in May 2019.
+                    </h5>
+                    <ol>
+                        <li>
+                            At Base Camp I:
+                            <ul>
+                                <li>
+                                    Try to push myself to learn different
+                                    languages
+                                </li>
+                                <li>Try new ideas and projects</li>
+                            </ul>
+                        </li>
+                        <li>
+                            My Interest:
+                            <ul>
+                                <li>Music</li>
+                                <li>Video Games</li>
+                                <li>Playing Guitar</li>
+                                <li>Movies/Tv shows</li>
+                            </ul>
+                        </li>
+                        <li>
+                            My Hobbies:
+                            <ul>
+                                <li>Hunting</li>
+                                <li>Fishing</li>
+                                <li>Playing Music</li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="language grid-container pb-5">
-                        <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://github.com/timothyb9526/TimothyBowlingwebrentalagency">
-                                        <img class="d-block w-100" src="pictures/front-end-final.png" width="200"
-                                            height="400" alt="First slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>HTML/CSS/JS Final</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://timothyb9526.github.io/Read_Dead_Redemption_2_Weapon_Compendium_Recreation/">
-                                        <img class="d-block w-100" src="pictures/rdr2.png" width="200" height="400"
-                                            alt="Second slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Red Dead 2 Weapon Compendium</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/Trending_projects">
-                                        <img class="d-block w-100" src="pictures/Trending.png" width="200" height="400"
-                                            alt="Third slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Trending Topics</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/slack_features">
-                                        <img class="d-block w-100" src="pictures/slack-features.png" width="200" height="400"
-                                            alt="Fourth slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Slack features</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/Ruby_nav_bar">
-                                        <img class="d-block w-100" src="pictures/ruby-nav.png" width="200" height="400"
-                                            alt="Fifth slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Ruby nav bar</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/Article_card">
-                                        <img class="d-block w-100" src="pictures/article-note.png" width="200" height="400"
-                                            alt="Six slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Article card</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/key_links">
-                                        <img class="d-block w-100" src="pictures/key-links.png" width="200" height="400"
-                                            alt="Seventh slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Key links</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/explain">
-                                        <img class="d-block w-100" src="pictures/explain.png" width="200" height="400"
-                                            alt="Eighth slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Explain</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
-                    <div class="language grid-container pb-5">
-                        <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://github.com/timothyb9526/JavascriptTicTacToe">
-                                        <img class="d-block w-100" src="pictures/tic-tac-toe.png" width="200" height="400"
-                                            alt="First slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Tic Tac Toe</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/PingPong">
-                                        <img class="d-block w-100" src="pictures/ping_pong.png" width="200" height="400"
-                                            alt="Second slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Ping Pong</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://github.com/timothyb9526/js_memory_game">
-                                        <img class="d-block w-100" src="pictures/js_memory_game.png" width="200" height="400"
-                                            alt="Third slide">
-                                    </a>
-                                    <div class="carousel-caption d-md-block">
-                                        <h5>Js Memory game</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
-                        <div class="language grid-container pb-5">
-                            <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div id="django" class="carousel-item active d-md-block">
-                                        <p id="title">What we have been working on in Django</p>
-                                        <ul>
-                                            <li><a href="https://github.com/timothyb9526/django_views/blob/master/app/views.py">Django Views</a></li>
-                                            <li><a href="https://github.com/timothyb9526/django_views/tree/master/app/templates/app">Django Templates</a></li>
-                                            <li><a href="https://github.com/timothyb9526/django_views/blob/master/app/tests.py">Django testing</a></li>
-                                            <li><a href="https://github.com/timothyb9526/django_views/tree/master/app">Django forms</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
-            <div class="grid-container pb-5">
-                <div class="grid-item">Links
-                    <br />
-                    <a href="https://github.com/timothyb9526">
-                        <img src="pictures/github.png" width="100" height="100" alt="logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/timothy-bowling-73742516b/">
-                        <img src="pictures/linkedin_circle_black-512.png" width="110" height="110" alt="logo">
-                    </a>
+            <div class="container mt-5">
+                <div class="panel panel-default">
+                    <h1
+                        class="border border-dark text-center"
+                        style="background-color: rgba(192, 192, 192, 0.419);"
+                    >
+                        My Projects <span class="image">(Click an image)</span>
+                    </h1>
                 </div>
-                <div class="grid-item">Resume
-                    <br />
-                    <a href="https://docs.google.com/document/d/1554Oi7J3WnFb0ynqFb-w5qCFs5TCWjkXM5qeF8zfzJE/edit?usp=sharing">
-                        <img src="pictures/resume.png" height="110" width="110" alt="logo">
-                    </a>
+            </div>
+            <div
+                data-spy="scroll"
+                data-target="#list"
+                data-offset="0"
+                class="scrollspy-example"
+            >
+                <div class="container" id="projects">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <div class="slider"></div>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                id="home-tab"
+                                data-toggle="tab"
+                                href="#home"
+                                role="tab"
+                                aria-controls="home"
+                                aria-selected="true"
+                            >
+                                <i class="fas fa-home"></i>
+                                <span class="python ml-0"></span> Python</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="profile-tab"
+                                data-toggle="tab"
+                                href="#profile"
+                                role="tab"
+                                aria-controls="profile"
+                                aria-selected="false"
+                            >
+                                <i class="fas fa-id-card"></i> HTML/CSS</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="setting-tab"
+                                data-toggle="tab"
+                                href="#setting"
+                                role="tab"
+                                aria-controls="setting"
+                                aria-selected="false"
+                            >
+                                <i class="fas fa-cogs"></i> JavaScript</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="project-tab"
+                                data-toggle="tab"
+                                href="#project"
+                                role="tab"
+                                aria-controls="project"
+                                aria-selected="false"
+                            >
+                                <i class="fas fa-cogs"></i> Django</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div
+                            class="tab-pane fade show active"
+                            id="home"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                        >
+                            <div class="language grid-container pb-5">
+                                <div
+                                    id="carouselControls"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="2000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a
+                                                href="https://github.com/timothyb9526/rental_store_timothybowling"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/python-final.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="First slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Python Final</h5>
+                                                <p>
+                                                    This project was to build a
+                                                    terminal-based retail store
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/tetris"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/tetris.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Second slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Tetris</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    functioning tetris game and
+                                                    implementing it with a gui
+                                                    program.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/rental_store_timothybowling"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/Rental_store.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Third slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Rental Store</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    terminal base rental store.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/Gladiator"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/Gladiator.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Fourth slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Gladiator</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    gladiator game that was
+                                                    completely terminal-based.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/Blackjack"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/Blackjack.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Fifth slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Blackjack</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    blackjack game that was
+                                                    completely terminal-based.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/pythonChallenge"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/python_challenge.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Six slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Python_challenge</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    website that uses a
+                                                    database.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="profile"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                        >
+                            <div class="language grid-container pb-5">
+                                <div
+                                    id="carouselControls"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="2000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a
+                                                href="https://github.com/timothyb9526/TimothyBowlingwebrentalagency"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/front-end-final.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="First slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>HTML/CSS/JS Final</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    website where you can rent
+                                                    things.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://timothyb9526.github.io/Read_Dead_Redemption_2_Weapon_Compendium_Recreation/"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/rdr2.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Second slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>
+                                                    Red Dead 2 Weapon Compendium
+                                                </h5>
+                                                <p>
+                                                    This project was to make an
+                                                    app of our own choice and i
+                                                    chose this one.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/Trending_projects"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/Trending.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Third slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Trending Topics</h5>
+                                                <p>
+                                                    This project was to make an
+                                                    app that displays the
+                                                    trending topics of the devto
+                                                    page.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/slack_features"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/slack-features.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Fourth slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Slack features</h5>
+                                                <p>
+                                                    This project was to make an
+                                                    app that would display the
+                                                    slack features.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/Ruby_nav_bar"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/ruby-nav.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Fifth slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Ruby nav bar</h5>
+                                                <p>
+                                                    This project was to
+                                                    replicate a ruby nav bar
+                                                    using HTML/CSS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/Article_card"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/article-note.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Six slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Article card</h5>
+                                                <p>
+                                                    This project was to
+                                                    replicate a profile from
+                                                    devto website.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/key_links"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/key-links.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Seventh slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Key links</h5>
+                                                <p>
+                                                    This project was to
+                                                    replicate the key links page
+                                                    on the devto website using
+                                                    HTML/CSS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/explain"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/explain.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Eighth slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Explain</h5>
+                                                <p>
+                                                    This project was to
+                                                    replicate the explain page
+                                                    on the devto website using
+                                                    HTML/CSS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="setting"
+                            role="tabpanel"
+                            aria-labelledby="setting-tab"
+                        >
+                            <div class="language grid-container pb-5">
+                                <div
+                                    id="carouselControls"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="2000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a
+                                                href="https://github.com/timothyb9526/JavascriptTicTacToe"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/tic-tac-toe.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="First slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Tic Tac Toe</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    game of our choice using
+                                                    mostly javaScript and i
+                                                    chose this one.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/PingPong"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/ping_pong.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Second slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Ping Pong</h5>
+                                                <p>
+                                                    This project was to make an
+                                                    app that would keep the
+                                                    score of a ping pong game.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a
+                                                href="https://github.com/timothyb9526/js_memory_game"
+                                            >
+                                                <img
+                                                    class="d-block w-100"
+                                                    src="pictures/js_memory_game.png"
+                                                    width="200"
+                                                    height="400"
+                                                    alt="Third slide"
+                                                />
+                                            </a>
+                                            <div
+                                                class="carousel-caption d-md-block"
+                                            >
+                                                <h5>Js Memory game</h5>
+                                                <p>
+                                                    This project was to make a
+                                                    game using mostly
+                                                    javaScript.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="project"
+                            role="tabpanel"
+                            aria-labelledby="project-tab"
+                        >
+                            <div class="language grid-container pb-5">
+                                <div
+                                    id="carouselControls"
+                                    class="carousel slide"
+                                    data-ride="carousel"
+                                    data-interval="2000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div
+                                            id="django"
+                                            class="carousel-item active d-md-block"
+                                        >
+                                            <p id="title">
+                                                What we have been working on in
+                                                Django
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="https://github.com/timothyb9526/django_views/blob/master/app/views.py"
+                                                        >Django Views</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://github.com/timothyb9526/django_views/tree/master/app/templates/app"
+                                                        >Django Templates</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://github.com/timothyb9526/django_views/blob/master/app/tests.py"
+                                                        >Django testing</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://github.com/timothyb9526/django_views/tree/master/app"
+                                                        >Django forms</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container pb-5">
+                        <div class="grid-item">
+                            Links
+                            <br />
+                            <a href="https://github.com/timothyb9526">
+                                <img
+                                    src="pictures/github.png"
+                                    width="100"
+                                    height="100"
+                                    alt="logo"
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/timothy-bowling-73742516b/"
+                            >
+                                <img
+                                    src="pictures/linkedin_circle_black-512.png"
+                                    width="110"
+                                    height="110"
+                                    alt="logo"
+                                />
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            Resume
+                            <br />
+                            <a
+                                href="https://docs.google.com/document/d/1554Oi7J3WnFb0ynqFb-w5qCFs5TCWjkXM5qeF8zfzJE/edit?usp=sharing"
+                            >
+                                <img
+                                    src="pictures/resume.png"
+                                    height="110"
+                                    width="110"
+                                    alt="logo"
+                                />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="corner-ribbon bottom-left sticky brown">
-            <a href="mailto:tbowling@basecampcodingacademy.org" target="-blank">Email Me!</a>
+            <a href="mailto:tbowling@basecampcodingacademy.org" target="-blank"
+                >Email Me!</a
+            >
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-        <script src="javaScript.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-</body>
-
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="javaScript.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

@@ -29,19 +29,6 @@ body {
     transition: background-color 1s;
     width: 10rem;
 }
-.header a:hover {
-    color: white;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-        to left,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(152, 152, 152, 1) 64%,
-        rgba(55, 55, 55, 1) 86%
-    );
-    background-repeat: no-repeat;
-    background-size: 200% 100%;
-    transition: background-size 2s, background-color 3s;
-}
 .header .btn {
     background-color: transparent;
 }
@@ -66,9 +53,7 @@ body {
     padding-bottom: 1rem;
     background-color: rgba(192, 192, 192, 0.419);
     border: 1px solid black;
-    border-style: dotted;
-    text-decoration: underline;
-    text-decoration-style: wavy;
+    color: white;
 }
 .grid-container {
     display: grid;
@@ -145,6 +130,11 @@ body {
     line-height: 50px;
     transform: rotate(45deg);
 }
+
+#list a {
+    background-color: transparent;
+}
+
 .corner-ribbon a {
     color: black;
     text-decoration: none;
@@ -161,10 +151,50 @@ body {
     height: 25rem;
     max-width: 50rem;
 }
-.carousel-caption h5 {
+
+@media only screen and (max-width: 600px) {
+    :root {
+        width: 100%;
+        font-size: 0.4rem;
+    }
+
+    .tab-content {
+        margin-bottom: 20rem;
+    }
+
+    .grid-container .grid-item {
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    .grid-container img {
+        width: 100%;
+    }
+
+    .tab-pane {
+        padding: 15px;
+        height: 300px;
+        width: 55rem;
+        font-size: 2rem;
+        padding-left: 0rem;
+    }
+    .tab-pane .carousel-caption {
+        width: 102.5%;
+        padding-left: 2.5rem;
+    }
+
+    .tab-pane #django {
+        font-size: 3rem;
+    }
+}
+
+.carousel-caption {
     background-color: black;
-    width: 145%;
+    margin-bottom: -2rem;
+    width: 102.5%;
     margin-left: -8rem;
-    height: 2rem;
     color: white;
+}
+.image {
+    font-size: 1.5rem;
 }
